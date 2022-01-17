@@ -9,11 +9,11 @@ output:
 2 : scissors
 """
 
+
 def computerChoice():
-  
-  
-  
-  
+  import random
+  a = random.choice("012")
+  value = int(a)
   return value
 
 

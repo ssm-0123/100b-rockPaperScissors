@@ -24,9 +24,18 @@ def playerChoice():
   1: paper
   2: scissors
   '''
+  rps = {"R" : 0,"P" : 1,"S" : 2}
+  while True:
+    print("choose rock paper scissors (R/P/S)")
+    choice = input("")
+    if choice in "RPS" :
+      value = rps[choice]
+      break
+  
   return value
 
 
 if __name__ == "__main__":
   player = playerChoice()
   print(player)
+
